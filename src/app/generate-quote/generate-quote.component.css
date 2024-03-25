@@ -1,0 +1,12 @@
+.pera{
+    font-weight: bold;
+    font-size: 25px;
+}
+.dd{
+    display: flex;
+    float: right;
+}
+.container{
+    margin: 50px;
+    padding: 30px;
+}

@@ -1,0 +1,115 @@
+@if (importersData.length===0) {
+  <p>No requstes</p>
+}
+@else {
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Company Name</th>
+        <th>Type Of Busines</th>
+        <th>Name</th>
+        <th>Email Id</th>
+        <th>Phone No</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(importer of importersData;track importer;let index=$index){
+        <tr>
+          <td>{{importer.companyName}}</td>
+          <td>{{importer.typeOfBuss}}</td>
+          <td>{{importer.name}}</td>
+          <td>{{importer.emailId}}</td>
+          <td>{{importer.phone}}</td>
+          <td>
+            @if(importer.quoteStatus==='Pending'){
+              <button type="submit" class="btn" (click)="sendQuote(index)">Send Quote</button>
+            }
+            @else {
+              {{importer.quoteStatus}}
+            }
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}
+<div class="row">
+  <div class="col d-flex flex-row-reverse">
+    <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="clickAdd()">Add New Product</button>
+  </div>
+</div>
+<div class="row row-cols-1 row-cols-sm row-cols-md-3 row-cols-lg-4">
+  @for(data of machineryData;track data){
+    <div class="col">
+      <div class="card">
+        <img class="card-img-top" src="{{data?.image}}" alt="Card image cap" width="100px" height="300px">
+        <div class="card-body">
+          <h5 class="card-title">{{data?.title}}</h5>
+          <p class="card-text">{{data?.discription}}</p>
+          <p class="card-text">Cost : {{data?.cost | currency:"INR"}}</p>
+          <p class="card-text">Made in : {{data?.madein}}</p>
+          <p class="card-text">Manufacturer : {{data?.manufacturer}}</p>
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn px-2" (click)="editMachineryData(data)" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn px-2" (click)="onDelete(data)">Delete</button>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  }
+</div>
+
+
+
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Property Records</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container my-4 border border-dark p-3 rounded">  
+          <form class="form-group" [formGroup]="mechineryDetails" (ngSubmit)="onSubmitData()">
+            <div>
+              <label for="title" class="form-label">Title</label>
+              <input type="text" formControlName="title" id="title" class="form-control">
+            </div>
+            <div>
+              <label for="image" class="form-label">Image Url</label>
+              <input type="text" formControlName="image" id="image" class="form-control">
+            </div>
+            <div>
+              <label for="discription" class="form-label">Discription</label>
+              <textarea formControlName="discription" id="discription" class="form-control"></textarea>
+            </div>
+            <div>
+              <label for="cost" class="form-label">Cost</label>
+              <input type="number" formControlName="cost" id="cost" class="form-control">
+            </div>
+            <div>
+              <label for="madein" class="form-label">Made In</label>
+              <input type="text" formControlName="madein" id="madein" class="form-control">
+            </div>
+            <div>
+              <label for="manufacturer" class="form-label">Manufacturer</label>
+              <input type="text" formControlName="manufacturer" id="manufacturer" class="form-control">
+            </div>
+            <div>
+              <button type="submit" class="btn px-3 m-2" *ngIf="showAdd" data-bs-dismiss="modal">Submit</button>
+              <button type="button" class="btn px-3 m-2" (click)="updateMachinery()" *ngIf="showUpdate" data-bs-dismiss="modal">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

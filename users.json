@@ -1,0 +1,158 @@
+{
+  "importers": [
+    {
+      "id": "6580",
+      "username": "Ramu",
+      "password": "123456",
+      "email": "ramu@cognizant.com",
+      "dob": "2024-01-10"
+    }
+  ],
+  "exporters": [
+    {
+      "id": "2c4c",
+      "username": "Sai",
+      "password": "123456",
+      "email": "sai@cognizant.com",
+      "dob": "2024-01-10"
+    }
+  ],
+  "importerDetails": [
+    {
+      "id": "ad16",
+      "companyName": "Ramu wood works",
+      "typeOfBuss": "wood working",
+      "name": "Ramu",
+      "emailId": "ramu@cognizant.com",
+      "phone": "56437828",
+      "quoteStatus": "Pending",
+      "address": {
+        "city": "Vizag",
+        "country": "India",
+        "pinCode": "500033"
+      }
+    },
+    {
+      "id": "7434",
+      "companyName": "Hell Company",
+      "typeOfBuss": "Wood selling",
+      "name": "ddddd",
+      "emailId": "ragu@gmail.com",
+      "phone": "9759893849",
+      "quoteStatus": "Pending",
+      "address": {
+        "city": "Hyderabad",
+        "country": "India",
+        "pinCode": "56789"
+      }
+    },
+    {
+      "id": "93d5",
+      "companyName": "Hello",
+      "typeOfBuss": "wood working",
+      "name": "Ramu",
+      "emailId": "ramu@email.com",
+      "phone": "666666666",
+      "quoteStatus": "Pending",
+      "address": {
+        "city": "hyd",
+        "country": "india",
+        "pinCode": "6666"
+      }
+    },
+    {
+      "id": "158f",
+      "companyName": "",
+      "typeOfBuss": "",
+      "name": "",
+      "emailId": "",
+      "phone": "",
+      "quoteStatus": "Pending",
+      "address": {
+        "city": "",
+        "country": "",
+        "pinCode": ""
+      }
+    },
+    {
+      "id": "0a0f",
+      "companyName": "ssssss",
+      "typeOfBuss": "ssssssssss",
+      "name": "ssssssssss",
+      "emailId": "ssssssssssss",
+      "phone": "sssssssssss",
+      "quoteStatus": "Pending",
+      "address": {
+        "city": "sssssssssssssss",
+        "country": "ssssssssss",
+        "pinCode": "sssssssss"
+      }
+    },
+    {
+      "id": "97aa",
+      "companyName": "",
+      "typeOfBuss": "",
+      "name": "",
+      "emailId": "",
+      "phone": "",
+      "quoteStatus": "Pending",
+      "address": {
+        "city": "",
+        "country": "",
+        "pinCode": ""
+      }
+    },
+    {
+      "id": "d2b3",
+      "companyName": "",
+      "typeOfBuss": "",
+      "name": "",
+      "emailId": "",
+      "phone": "",
+      "quoteStatus": "Pending",
+      "address": {
+        "city": "",
+        "country": "",
+        "pinCode": ""
+      }
+    }
+  ],
+  "machinery": [
+    {
+      "id": "0837",
+      "title": "Chainsaw",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/2/HM/MD/SZ/14081773/wood-cutter.jpg",
+      "discription": "A chainsaw (or chain saw) is a portable, mechanical saw powered by a gasoline two-stroke engine. It is used in activities such as tree felling, limbing, bucking, pruning it is a good machine.",
+      "cost": 8000,
+      "madein": "Japan",
+      "manufacturer": "Tools Center"
+    },
+    {
+      "id": "ebd1",
+      "title": "Wood Cutter",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2022/2/MB/KS/RA/50346121/kze02-110-110mm-marble-cutter-500x500.jpg",
+      "discription": "The 4-inch saw blade is made of strong high-speed alloy metal that's sharp and neat. Enabled with advanced technology, this saw blade offers high performance and has a longer service life.",
+      "cost": 2500,
+      "madein": "China",
+      "manufacturer": "Bishandas Traders"
+    },
+    {
+      "id": "c76b",
+      "title": "Jigsaw",
+      "image": "https://5.imimg.com/data5/QQ/SN/EQ/SELLER-106675408/jigsaw-machine.jpg",
+      "discription": "The 'jigsaw' group together complete a task which requires them to understand all of the information shared by each 'expert'. This could be anything that requires each learner to contribute their piece.",
+      "cost": 9500,
+      "madein": "America",
+      "manufacturer": "Hari Udyogi"
+    },
+    {
+      "id": "fe94",
+      "title": "Surface Planer",
+      "image": "https://image.made-in-china.com/2f0j00FRJUuTlraspV/Wood-Surface-Planer-Thickness-Planer-Woodworking-Machine.webp",
+      "discription": "Used in the initial preparation of wood, producing flat faces and square edges. Problems can occur when fingers get dragged between the fence and guard and contact the cutters. ",
+      "cost": 120000,
+      "madein": "China",
+      "manufacturer": "Quing Dao"
+    }
+  ]
+}

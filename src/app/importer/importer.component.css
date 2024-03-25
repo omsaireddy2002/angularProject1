@@ -1,0 +1,29 @@
+.row-cols-1:active{
+    width:75%;
+}
+.row{
+    /* column-gap: 100px; */
+    /* width: 80%; */
+    margin: auto;
+    align-content: center;
+}
+.card{
+    background-color: e1e8ed;
+}
+button{
+    background-color: #33424f;
+    color: #ffffff;
+}
+button:hover{
+    background-color: #33424f;
+    color: #ffffff;
+}
+button:active{
+    background-color: #33424f;
+    color: #ffffff;
+}
+
+button:disabled{
+    background-color: #33424f;
+    color: #ffffff;
+}

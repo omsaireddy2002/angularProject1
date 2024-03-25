@@ -1,0 +1,30 @@
+
+div{
+    margin-bottom: 10px;
+}
+form{
+    background-color: #e1e8ed;
+    border-radius: 20px;
+    margin: 50px 50px;
+    padding: 20px 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    background-color: #33424f;
+    color: #ffffff;
+}
+button:hover{
+    background-color: #33424f;
+    color: #ffffff;
+}
+button:active{
+    background-color: #33424f;
+    color: #ffffff;
+}
+
+button:disabled{
+    background-color: #33424f;
+    color: #ffffff;
+}
